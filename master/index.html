@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>RGB Controls</title>
+</head>
+
+<body class="bg-dark text-light">
+    <header class="container">
+        <h1 class="">RPi Pico RGB</h1>
+        <p>Control your RGB from this simple interface.</p>
+    </header>
+    <main class="container">
+        <form action="http://localhost:8080" method="POST">
+            <fieldset>
+                <legend>Choose RGB Controller</legend>
+                <label for="Pico">Pico1</label>
+                <input type="checkbox" name="Pico" id="Pico1">
+            </fieldset>
+            <label for="RGB">Color:</label>
+            <input type="color" name="RGB" id="RGB" placeholder="RGB value (r,g,b)">
+            <label for="SlaveID">Slave:</label>
+            <input type="number" name="SlaveID" id="SlaveID" value="27100">
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer class="container">
+        <p>Created by <a href="http://www.octobers.xyz">Octobers</a></p>
+        <p>Copyright Viktor Thörnroos</p>
+    </footer>
+</body>
+
+</html>
